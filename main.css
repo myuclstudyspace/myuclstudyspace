@@ -3,3 +3,13 @@
 	position: absolute;
 	z-index: -1;
 }
+
+#map-canvas {
+        width: 500px;
+        height: 400px;
+        background-color: #CCC;
+      }
+#googleMap {
+	width: 700px;
+	height: 500px;
+	} 

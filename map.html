@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.5235367, -0.1328239),
+    zoom: 15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
   <title>Focuspace</title>
   <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href='main.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -12,27 +26,19 @@
   <div class='jumbotron'>
 
     <div class='row'>
-      <div class='col-sm-8'>
-
-    
+    <div class='col-sm-8'>
 
     </div>
-
-
-
     <a class="navbar-brand" href="#"><img alt="logo" src="logos/reallogo.png" height='150'></a>
-   
-
     </div>
 
+    </div>
+    <div id="UCL Local Study Places">
+    <h2><small <br />UCL Local Study Places</h2>
     
-  </div>
+    <div id="googleMap"></div>
 
-  <div id="buzz">
-    <h2><small = coffee shop> <br />UCL Local Study Places</h2>
-    
     <div class='row'>
-
     <div>
       <div class='col-sm-4'>
       <img  src='images/person.jpg' class="img-circle">
