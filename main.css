@@ -10,6 +10,13 @@
         background-color: #CCC;
       }
 #googleMap {
-	width: 700px;
+	width: 500px;
 	height: 500px;
 	} 
+#Libraries {
+	float: right; 
+	border-style: groove;
+	border-width: 5px;
+	border-color: purple;
+	padding: 15px;
+}
